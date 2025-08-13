@@ -1,30 +1,20 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, send_from_directory
 import os
 
-app = Flask(
-    __name__,
-    static_folder="../Frontend",  # Serve static files (images, CSS, JS)
-    template_folder="../Frontend"  # Serve HTML files
-)
+app = Flask(__name__, static_folder="frontend", static_url_path="")
 
-# Serve main pages
+# Serve HTML files
 @app.route("/")
-def home():
-    return send_from_directory(app.template_folder, "index.html")
+def index():
+    return send_from_directory(app.static_folder, "index.html")
 
-@app.route("/<path:filename>")
-def serve_page(filename):
-    file_path = os.path.join(app.template_folder, filename)
-    if os.path.exists(file_path):
-        return send_from_directory(app.template_folder, filename)
-    else:
-        return "Page not found", 404
+@app.route("/<path:path>")
+def serve_page(path):
+    return send_from_directory(app.static_folder, path)
 
-# Serve Images, CSS, JS from Frontend/
-@app.route("/Images/<path:filename>")
-def serve_images(filename):
-    return send_from_directory(os.path.join(app.static_folder, "Images"), filename)
-
+# Railway will set the PORT variable automatically
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Railway sets PORT env var
+    port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
+
