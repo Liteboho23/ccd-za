@@ -103,7 +103,7 @@ nav a {
 </head>
 <body>
   <header>
-    <img src="Images/ccd logo.jpg" alt="CCD Logo" class="logo"/>
+    <img src="{{ url_for('static', filename='images/ccd logo.jpg') }}" alt="CCD Logo" class="logo"/>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -122,15 +122,15 @@ nav a {
 
   <section class="gallery-container">
     <div class="gallery-grid">
-      <img src="Images/activity 1.JPG" alt="Programme Activity 1">
-      <img src="Images/gallery.jpg" alt="Civic Education Event">
-      <img src="Images/community 1.jpg" alt="Community Engagement">
-      <img src="Images/community 2.png" alt="Community Engagement">
-      <img src="Images/workshop.JPG" alt="Workshop Session">
-      <img src="Images/youth.jpg" alt="Youth Participation">
-      <img src="Images/activity 2.JPG" alt="Programme Activity 2">
-      <img src="Images/pic.jpg" alt="Civic Education Event">
-    </div>
+  <img src="{{ url_for('static', filename='images/activity 1.JPG') }}" alt="Programme Activity 1">
+  <img src="{{ url_for('static', filename='images/gallery.jpg') }}" alt="Civic Education Event">
+  <img src="{{ url_for('static', filename='images/community 1.jpg') }}" alt="Community Engagement">
+  <img src="{{ url_for('static', filename='images/community 2.png') }}" alt="Community Engagement">
+  <img src="{{ url_for('static', filename='images/workshop.JPG') }}" alt="Workshop Session">
+  <img src="{{ url_for('static', filename='images/youth.jpg') }}" alt="Youth Participation">
+  <img src="{{ url_for('static', filename='images/activity 2.JPG') }}" alt="Programme Activity 2">
+  <img src="{{ url_for('static', filename='images/pic.jpg') }}" alt="Civic Education Event">
+</div>
   </section>
 
   <footer>
