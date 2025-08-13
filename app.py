@@ -11,10 +11,13 @@ pages = ["", "about", "programmes", "team", "gallery", "partnerships", "contact"
 def serve_page(page="index"):
     try:
         return render_template(f"{page}.html")
-    except:
-        return render_template("404.html"), 404
+    except Exception as e:
+        # Show the exact error for debugging
+        return f"Error rendering {page}.html: {e}", 500
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
 
     app.run(host="0.0.0.0", port=port)
+
