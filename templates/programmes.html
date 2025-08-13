@@ -120,7 +120,7 @@ nav a {
 </head>
 <body>
   <header>
-    <img src="Images/ccd logo.jpg" alt="CCD Logo" class="logo"/>
+    <img src="{{ url_for('static', filename='images/ccd logo.jpg') }}" alt="CCD Logo" class="logo"/>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -140,27 +140,29 @@ nav a {
   <section class="programmes-grid">
     <a href="citizens not spectators.html" class="programme-link">
       <div class="programme-card">
-        <img src="Images/citizens.png" alt="Citizens Not Spectators">
+        <img src="{{ url_for('static', filename='images/citizens.png') }}" alt="Citizens Not Spectators">
         <div class="programme-title">Citizens in Action</div>
       </div>
     </a>
     <a href="democracy in sa.html" class="programme-link">
       <div class="programme-card">
-        <img src="Images/democracy.jpg" alt="Democracy in South Africa">
+        <img src="{{ url_for('static', filename='images/democracy.jpg') }}" alt="Democracy in South Africa">
         <div class="programme-title">Democracy in Action</div>
       </div>
     </a>
-    <a href="national holidays.html" class="programme-link">
-      <div class="programme-card">
-        <img src="Images/SA unite.jpg" alt="National Holidays">
-        <div class="programme-title">Electoral Integrity and Observation Programme</div>
-      </div>
-    </a>
-    <a href="national symbols.html" class="programme-link">
-      <div class="programme-card">
-        <img src="Images/symbols.jpeg" alt="National Symbols">
-        <div class="programme-title">The National Identity</div>
-      </div>
+    <a href="/national-holidays" class="programme-link">
+  <div class="programme-card">
+    <img src="{{ url_for('static', filename='images/SA unite.jpg') }}" alt="National Holidays">
+    <div class="programme-title">Electoral Integrity and Observation Programme</div>
+  </div>
+</a>
+<a href="/national-symbols" class="programme-link">
+  <div class="programme-card">
+    <img src="{{ url_for('static', filename='images/symbols.jpeg') }}" alt="National Symbols">
+    <div class="programme-title">The National Identity</div>
+  </div>
+</a>
+
     </a> 
   </section>
 
@@ -175,3 +177,4 @@ nav a {
   </footer>
 </body>
 </html>
+
