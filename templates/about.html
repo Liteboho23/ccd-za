@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -116,7 +117,7 @@ nav a i {
 </head>
 <body>
   <header>
-    <img src="Images/ccd logo.jpg" alt="CCD Logo" class="logo"/>
+    <img src="{{ url_for('static', filename='images/ccd logo.jpg') }}" alt="CCD Logo" class="logo"/>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
@@ -141,7 +142,7 @@ nav a i {
     <p>We aim to achieve our vision by promoting active citizenship and upholding democratic values and principles. We strive to be performance-driven, accountable, innovative, and operationally excellent.</p>
     </div>
     <div class="image-content">
-      <img src="Images/cover.JPG" alt="Civic education visual"/>
+      <img src="{{ url_for('static', filename='images/cover.JPG') }}" alt="Civic education visual"/>
     </div>
   </section>
   <footer>
