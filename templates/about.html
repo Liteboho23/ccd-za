@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About CCD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFFFFF;
+      color: #061D3B;
+    }
+    header {
+      background-color: #061D3B;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #FFFFFF;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #077386;
+    }
+    .hero {
+      background-color: #077386;
+      color: #FFFFFF;
+      padding: 30px 10px;
+      text-align: center;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    footer {
+      background-color: #000000;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px;
+    }
+    header {
+  background-color: #061D3B;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  height: 100px;
+  margin-left: 20px;
+}
+nav a {
+      color: #FFFFFF;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a:hover,
+    nav a.active {
+      color: #077386;
+    }
+    .split-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+.text-context, .image-content{
+  width: 100%;
+}
+.image-content img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media(min-width: 768px){
+  .split-section{
+    flex-direction: row;
+  }
+  .text-content{
+    flex: 1;
+    padding-right: 20px;
+  }
+  .image-content{
+    flex: 1;
+    max-width: 500px;
+  }
+}
+nav a i {
+  margin-right: 6px;
+}
+.social-icons {
+  text-align: center;
+  margin-top: 1rem;
+  background-color: #000000;
+}
+.social-icons a {
+  color: #FFFFFF;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Images/ccd logo.jpg" alt="CCD Logo" class="logo"/>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="team.html">Team</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="partnerships.html">Partnerships</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="split-section">
+    <div class="text-content">
+    <h2>Organisational Overview</h2>
+    <p>The Centre for Citizenship and Democracy (CCD) is a registered non-profit organisation (NPO Reg. No: 150-101) under the NPO Act of 1997. CCD is a non-partisan entity that initiates and implements civic education programmes across communities. Our work fosters a deeper understanding of democratic values and helps cultivate a culture of active citizenship in South Africa.</p>
+    <p>Through strategic collaborations with institutions and organisations that share our goals, we create powerful learning experiences that strengthen democratic engagement and community involvement. Our programmes focus on the practical application of civic knowledge and promote the participation of all South Africans in the democratic process.</p>
+    
+    <h2>Vision</h2>
+    <p>To become a leading Civic Education Agency that empowers citizens to fully and meaningfully participate in South Africa's democracy.</p>
+
+    <h2>Mission</h2>
+    <p>We aim to achieve our vision by promoting active citizenship and upholding democratic values and principles. We strive to be performance-driven, accountable, innovative, and operationally excellent.</p>
+    </div>
+    <div class="image-content">
+      <img src="Images/cover.JPG" alt="Civic education visual"/>
+    </div>
+  </section>
+  <footer>
+     <div class="social-icons">
+       <a href="https://facebook.com/share/p/73qzbBs9EuHv9yky/?mibextid=WC7FNe" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook"></i></a>
+       <a href="https://youtube.com/@ccd_za?si=36h6V8PjrrzUR_5s" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+       <a href="https://instagram.com/p/C7e8MV1ME_/?igsh=OWRxMDZyNHZkOHFq" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+       <a href="https://x.com/ccd_za/status/1795174750924271869?s=46" target="_blank" rel="noopener" title="X"><i class="fab fa-x-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Centre for Citizenship and Democracy</p>
+  </footer>
+</body>
+</html>
