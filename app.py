@@ -4,7 +4,7 @@ import os
 app = Flask(__name__)
 
 # Map routes without .html
-pages = ["", "about", "programmes", "team", "gallery", "partnerships", "contact"]
+pages = ["", "about", "programmes", "team", "gallery", "partnerships", "contact", "citizens not spectators", "democracy in sa", "national holidays", "national symbols"]
 
 @app.route("/")
 @app.route("/<page>")
@@ -16,4 +16,5 @@ def serve_page(page="index"):
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
+
     app.run(host="0.0.0.0", port=port)
