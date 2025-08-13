@@ -145,7 +145,7 @@ nav a {
 </head>
 <body>
   <header>
-    <img src="Images/ccd logo.jpg" alt="CCD Logo" class="logo"/>
+    <img src="{{ url_for('static', filename='images/ccd logo.jpg') }}" alt="CCD Logo" class="logo"/>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -185,3 +185,4 @@ nav a {
   </footer>
 </body>
 </html>
+
