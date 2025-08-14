@@ -141,6 +141,21 @@ nav a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   list-style: none;
 }
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.partner-logos img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 </style>
 </head>
 <body>
@@ -163,15 +178,22 @@ nav a {
   </section>
 
  <section class="partnerships-section">
-  <ul class="card-grid">
-    <li class="card">Civil Society Organisations</li>
-    <li class="card">Private Sector Entities</li>
-    <li class="card">Government Institutions</li>
-    <li class="card">Institutions of Higher Learning</li>
-    <li class="card">Municipalities</li>
-    <li class="card">Media Organisations</li>
-    <li class="card">Chapter Nine Institutions</li>
-  </ul>
+ <div class="partner-logos">
+    <img src="{{ url_for('static', filename='images/Picture1.png') }}" alt="Partner 1 Logo">
+    <img src="{{ url_for('static', filename='images/Picture2.png') }}" alt="Partner 2 Logo">
+    <img src="{{ url_for('static', filename='images/Picture3.png') }}" alt="Partner 3 Logo">
+    <img src="{{ url_for('static', filename='images/Picture4.png') }}" alt="Partner 4 Logo">
+    <img src="{{ url_for('static', filename='images/Picture5.png') }}" alt="Partner 5 Logo">
+    <img src="{{ url_for('static', filename='images/Picture6.png') }}" alt="Partner 6 Logo">
+    <img src="{{ url_for('static', filename='images/Picture7.png') }}" alt="Partner 7 Logo">
+    <img src="{{ url_for('static', filename='images/Picture8.png') }}" alt="Partner 8 Logo">
+    <img src="{{ url_for('static', filename='images/Picture9.png') }}" alt="Partner 9 Logo">
+    <img src="{{ url_for('static', filename='images/Picture10.png') }}" alt="Partner 10 Logo">
+    <img src="{{ url_for('static', filename='images/Picture11.png') }}" alt="Partner 11 Logo">
+    <img src="{{ url_for('static', filename='images/Picture12.png') }}" alt="Partner 12 Logo">
+    <img src="{{ url_for('static', filename='images/Picture13.png') }}" alt="Partner 13 Logo">
+    <img src="{{ url_for('static', filename='images/Picture14.png') }}" alt="Partner 14 Logo">
+  </div>
 </section>
 
   <footer>
@@ -185,6 +207,7 @@ nav a {
   </footer>
 </body>
 </html>
+
 
 
 
