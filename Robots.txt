@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ccd-za.onrender.com/sitemap.xml
