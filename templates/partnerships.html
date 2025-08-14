@@ -156,6 +156,13 @@ nav a {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+.partner-logos img.featured {
+  grid-column: span 2; /* make it take up more space */
+  width: 100%; /* fit within its larger grid space */
+  max-width: 250px; /* prevent it from getting too large */
+  height: auto;
+  object-fit: contain;
+}
 </style>
 </head>
 <body>
@@ -192,7 +199,7 @@ nav a {
     <img src="{{ url_for('static', filename='images/Picture13.png') }}" alt="Partner 13 Logo">
     <img src="{{ url_for('static', filename='images/Picture14.png') }}" alt="Partner 14 Logo">
    <img src="{{ url_for('static', filename='images/Picture2.png') }}" alt="Partner 2 Logo">
-   <img src="{{ url_for('static', filename='images/Picture1.png') }}" alt="Partner 1 Logo">
+   <img src="{{ url_for('static', filename='images/Picture1.png') }}" alt="Partner 1 Logo" class="featured">
   </div>
 </section>
 
@@ -207,6 +214,7 @@ nav a {
   </footer>
 </body>
 </html>
+
 
 
 
